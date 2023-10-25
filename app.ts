@@ -69,7 +69,7 @@ bot.on('inline_query', async ctx => {
 
     console.log(result)
     await ctx.telegram.answerInlineQuery(ctx.inlineQuery.id, [result], {
-        cache_time: 0,
+        cache_time: 60,
     })
 })
 
